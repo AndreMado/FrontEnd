@@ -1,0 +1,102 @@
+:root {
+    --black:#000000;
+    --white: #FFFFFF;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --dark: #232830;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+.product-detail {
+    width: 350px;
+    position: absolute;
+    right: 30px;
+}
+.close-icon {
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 322px;
+}
+.T-Shirt {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.product-description {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+}
+.product-description li {
+    width: 10px;
+    height: 10px;
+    background-color: var(--very-light-pink);
+    border-radius: 50%;
+    list-style: none;
+    margin: 10px 10px 0 0;
+}
+.product-description li:nth-child(1) {
+    background-color: var(--hospital-green);
+}
+.product-description .points {
+    display: flex;
+    justify-content: center;
+}
+.product-description h1 {
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+.product-description h2 {
+    font-size: var(--sm);
+    font-weight: 400;
+    color: var(--very-light-pink);
+    margin-top: 0;
+}
+.product-description p {
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 30px;
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px 0px 100px;
+    margin-bottom: 10px;
+    background-color: var(--hospital-green);
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+}
+button img {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px; 
+}
+button p {
+    font-size: var(--lg);
+    color: var(--white);
+}
+@media (max-width: 700px) {
+    .product-detail {
+        width: 350px;
+        position: fixed;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+}
